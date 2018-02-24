@@ -43,16 +43,31 @@ function addQ(event) {
     document.getElementById("clear").reset();
     console.log(questionList);
     if (surveyButton === false) {
-        $("#qForm").append('<button id="save" class="btn btn-light"> Save </button>');
+        $("#qForm").append('<button id="save" class="btn btn-light" onClick"saveS(event)"> Save </button>');
         surveyButton = true;
     };
     return false;
 };
 
 
-$("#save").on("click", () => {
-    $.post("/api/addSurvey", { name: surveyName, questions: questionList });
-});
+
+// $('.qList').on('click', 'li', function () {
+//     $(this).toggleClass('select');
+// });
+
+// function deleteQ(event) {
+//     event.preventDefault();
+//     $('.qList li.select').remove();
+// };
+
+function saveS(event) {
+    event.preventDefault();
+    () => {
+        $.post("/api/addSurvey", { name: surveyName, questions: questionList });
+        console.log($.post("/api/addSurvey", { name: surveyName, questions: questionList }));
+    };
+    console.log("hello world");
+}
 
 
 
