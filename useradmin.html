@@ -41,7 +41,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="new-index.html">Home
+            <a class="nav-link text-uppercase text-expanded" href="home.html">Home
             </a>
           </li>
           <li class="nav-item px-lg-4">
@@ -49,11 +49,11 @@
               <span class="sr-only">(current)</span>
             </a>
           </li>
-          <li class="nav-item active px-lg-4">
+          <li class="nav-item px-lg-4">
             <a class="nav-link text-uppercase text-expanded" href="data.html">Data</a>
           </li>
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="login.html">Login</a>
+            <a class="nav-link text-uppercase text-expanded" href="new-index.html">Patient View</a>
           </li>
         </ul>
       </div>
@@ -61,17 +61,17 @@
   </nav>
 
   <section class="page-section">
-    <div class="container" id="questions">
+    <div class="container userAdmin" id="questions">
       <div class="intro">
         <h3 id="currentSurvey">Current Survey</h3>
         <ul id="questionList" style="list-style: none;">
         </ul>
         <form id="clear">
           <div class="form-group">
-            <label for="survey">Survey:</label>
+            <label for="survey">Survey: </label>
             <input type="text" id="surveyName">
           </div>
-          <button type="submit" id="newSurvey" class="btn btn-light">New Survey</button>
+          <button type="submit" id="newSurvey" class="btn btn-light uAButton">New Survey</button>
         </form>
       </div>
     </div>
@@ -95,18 +95,3 @@
 
 
 </html>
-
-
-
-<!-- 
-<form id="clear">
-    <div class="form-group">
-      <label for="cat">Category:</label>
-      <input type="text" id="cat" name="category">
-    </div>
-    <div class="form-group">
-      <label for="cat">New Question</label>
-      <textarea class="form-control" id="addQuestion" rows="3" name="questionText"></textarea>
-    </div>
-    <button type="submit" id="add" class="btn btn-light">Add Question</button>
-  </form> -->
